@@ -1,0 +1,518 @@
+{
+ "b_runs_identical": true,
+ "comparison": {
+  "pairwise": {
+   "A vs B": {
+    "edges": {
+     "left": 14,
+     "right": 5,
+     "shared": 5
+    },
+    "options_jaccard": 0.6,
+    "records_jaccard": 0.867
+   },
+   "A vs C1": {
+    "edges": {
+     "left": 14,
+     "right": 5,
+     "shared": 5
+    },
+    "options_jaccard": 1.0,
+    "records_jaccard": 1.0
+   },
+   "A vs C2": {
+    "edges": {
+     "left": 14,
+     "right": 5,
+     "shared": 5
+    },
+    "options_jaccard": 1.0,
+    "records_jaccard": 1.0
+   },
+   "A vs C3": {
+    "edges": {
+     "left": 14,
+     "right": 5,
+     "shared": 5
+    },
+    "options_jaccard": 1.0,
+    "records_jaccard": 1.0
+   },
+   "B vs C1": {
+    "edges": {
+     "left": 5,
+     "right": 5,
+     "shared": 5
+    },
+    "options_jaccard": 0.6,
+    "records_jaccard": 0.867
+   },
+   "B vs C2": {
+    "edges": {
+     "left": 5,
+     "right": 5,
+     "shared": 5
+    },
+    "options_jaccard": 0.6,
+    "records_jaccard": 0.867
+   },
+   "B vs C3": {
+    "edges": {
+     "left": 5,
+     "right": 5,
+     "shared": 5
+    },
+    "options_jaccard": 0.6,
+    "records_jaccard": 0.867
+   },
+   "C1 vs C2": {
+    "edges": {
+     "left": 5,
+     "right": 5,
+     "shared": 5
+    },
+    "options_jaccard": 1.0,
+    "records_jaccard": 1.0
+   },
+   "C1 vs C3": {
+    "edges": {
+     "left": 5,
+     "right": 5,
+     "shared": 5
+    },
+    "options_jaccard": 1.0,
+    "records_jaccard": 1.0
+   },
+   "C2 vs C3": {
+    "edges": {
+     "left": 5,
+     "right": 5,
+     "shared": 5
+    },
+    "options_jaccard": 1.0,
+    "records_jaccard": 1.0
+   }
+  }
+ },
+ "edge_metrics": "counts only (fewer than 5 records have stated prerequisites)",
+ "mode": "agreement (no gold KB: agreement is not accuracy)",
+ "model": "openrouter/nvidia/nemotron-3-ultra-550b-a55b:free",
+ "persona": "chem_data_s4",
+ "records_with_stated_prerequisites": 4,
+ "runs": {
+  "A": {
+   "attempts": 0,
+   "calls": 4,
+   "closure_added": [],
+   "closure_unresolved": [],
+   "completion_tokens": 29551,
+   "cost_source": {
+    "calls": 4,
+    "completion_tokens": 29551,
+    "missing_from_log": [],
+    "per_prompt": {
+     "foundations_v1": 4818,
+     "prereq_v1": 18116,
+     "rank_v2": 5023,
+     "skills_v1": 16873
+    },
+    "prompt_tokens": 15279
+   },
+   "edges": [
+    [
+     "CB2201",
+     "CB2102",
+     "inferred"
+    ],
+    [
+     "CB2202",
+     "CB2105",
+     "inferred"
+    ],
+    [
+     "CB2203",
+     "CB2202",
+     "inferred"
+    ],
+    [
+     "CB2204",
+     "MA1201",
+     "inferred"
+    ],
+    [
+     "CB2205",
+     "CB2104",
+     "inferred"
+    ],
+    [
+     "CB3101",
+     "CB2202",
+     "explicit"
+    ],
+    [
+     "CB3102",
+     "CB2205",
+     "inferred"
+    ],
+    [
+     "CB3103",
+     "CB2103",
+     "explicit"
+    ],
+    [
+     "CB3103",
+     "CB2202",
+     "explicit"
+    ],
+    [
+     "CB3104",
+     "CB2205",
+     "explicit"
+    ],
+    [
+     "CB3105",
+     "CB2205",
+     "explicit"
+    ],
+    [
+     "CS3106",
+     "CS1101",
+     "inferred"
+    ],
+    [
+     "MA2206",
+     "MA1201",
+     "inferred"
+    ],
+    [
+     "MA2206",
+     "MA3107",
+     "inferred"
+    ]
+   ],
+   "facts": 112,
+   "foundations": 6,
+   "gap_total": 0,
+   "gaps": {},
+   "model_failures": [],
+   "options": {
+    "IDE-I": [
+     "CS2207",
+     "MA2206"
+    ],
+    "IDE-II": [
+     "MA3107",
+     "CS3106"
+    ]
+   },
+   "prompt_tokens": 15279,
+   "provenance_share": 1.0,
+   "rank_source": "model",
+   "rebuild_calls_from_cache": 0,
+   "records": [
+    "CB2201",
+    "CB2202",
+    "CB2203",
+    "CB2204",
+    "CB2205",
+    "CB3101",
+    "CB3102",
+    "CB3103",
+    "CB3104",
+    "CB3105",
+    "CS2207",
+    "CS3106",
+    "MA2206",
+    "MA3107"
+   ],
+   "skills": 84,
+   "variant": "A",
+   "wall_seconds": null
+  },
+  "B": {
+   "attempts": 0,
+   "calls": 0,
+   "closure_added": [],
+   "closure_unresolved": [],
+   "completion_tokens": 0,
+   "edges": [
+    [
+     "CB3101",
+     "CB2202",
+     "explicit"
+    ],
+    [
+     "CB3103",
+     "CB2103",
+     "explicit"
+    ],
+    [
+     "CB3103",
+     "CB2202",
+     "explicit"
+    ],
+    [
+     "CB3104",
+     "CB2205",
+     "explicit"
+    ],
+    [
+     "CB3105",
+     "CB2205",
+     "explicit"
+    ]
+   ],
+   "facts": 19,
+   "foundations": 0,
+   "gap_total": 0,
+   "gaps": {},
+   "model_failures": [],
+   "options": {
+    "IDE-I": [
+     "CS2207",
+     "MA2206"
+    ],
+    "IDE-II": [
+     "MA3107",
+     "CE3105"
+    ]
+   },
+   "prompt_tokens": 0,
+   "provenance_share": 1.0,
+   "rank_source": "fallback",
+   "records": [
+    "CB2201",
+    "CB2202",
+    "CB2203",
+    "CB2204",
+    "CB2205",
+    "CB3101",
+    "CB3102",
+    "CB3103",
+    "CB3104",
+    "CB3105",
+    "CE3105",
+    "CS2207",
+    "MA2206",
+    "MA3107"
+   ],
+   "skills": 0,
+   "variant": "B",
+   "wall_seconds": 0.04
+  },
+  "C1": {
+   "attempts": 1,
+   "calls": 1,
+   "closure_added": [],
+   "closure_unresolved": [],
+   "completion_tokens": 2053,
+   "edges": [
+    [
+     "CB3101",
+     "CB2202",
+     "explicit"
+    ],
+    [
+     "CB3103",
+     "CB2103",
+     "explicit"
+    ],
+    [
+     "CB3103",
+     "CB2202",
+     "explicit"
+    ],
+    [
+     "CB3104",
+     "CB2205",
+     "explicit"
+    ],
+    [
+     "CB3105",
+     "CB2205",
+     "explicit"
+    ]
+   ],
+   "facts": 19,
+   "foundations": 0,
+   "gap_total": 0,
+   "gaps": {},
+   "model_failures": [],
+   "options": {
+    "IDE-I": [
+     "CS2207",
+     "MA2206"
+    ],
+    "IDE-II": [
+     "MA3107",
+     "CS3106"
+    ]
+   },
+   "prompt_tokens": 2097,
+   "provenance_share": 1.0,
+   "rank_source": "model",
+   "records": [
+    "CB2201",
+    "CB2202",
+    "CB2203",
+    "CB2204",
+    "CB2205",
+    "CB3101",
+    "CB3102",
+    "CB3103",
+    "CB3104",
+    "CB3105",
+    "CS2207",
+    "CS3106",
+    "MA2206",
+    "MA3107"
+   ],
+   "skills": 0,
+   "variant": "C",
+   "wall_seconds": 91.79
+  },
+  "C2": {
+   "attempts": 1,
+   "calls": 1,
+   "closure_added": [],
+   "closure_unresolved": [],
+   "completion_tokens": 2349,
+   "edges": [
+    [
+     "CB3101",
+     "CB2202",
+     "explicit"
+    ],
+    [
+     "CB3103",
+     "CB2103",
+     "explicit"
+    ],
+    [
+     "CB3103",
+     "CB2202",
+     "explicit"
+    ],
+    [
+     "CB3104",
+     "CB2205",
+     "explicit"
+    ],
+    [
+     "CB3105",
+     "CB2205",
+     "explicit"
+    ]
+   ],
+   "facts": 19,
+   "foundations": 0,
+   "gap_total": 0,
+   "gaps": {},
+   "model_failures": [],
+   "options": {
+    "IDE-I": [
+     "CS2207",
+     "MA2206"
+    ],
+    "IDE-II": [
+     "MA3107",
+     "CS3106"
+    ]
+   },
+   "prompt_tokens": 2097,
+   "provenance_share": 1.0,
+   "rank_source": "model",
+   "records": [
+    "CB2201",
+    "CB2202",
+    "CB2203",
+    "CB2204",
+    "CB2205",
+    "CB3101",
+    "CB3102",
+    "CB3103",
+    "CB3104",
+    "CB3105",
+    "CS2207",
+    "CS3106",
+    "MA2206",
+    "MA3107"
+   ],
+   "skills": 0,
+   "variant": "C",
+   "wall_seconds": 52.58
+  },
+  "C3": {
+   "attempts": 1,
+   "calls": 1,
+   "closure_added": [],
+   "closure_unresolved": [],
+   "completion_tokens": 2780,
+   "edges": [
+    [
+     "CB3101",
+     "CB2202",
+     "explicit"
+    ],
+    [
+     "CB3103",
+     "CB2103",
+     "explicit"
+    ],
+    [
+     "CB3103",
+     "CB2202",
+     "explicit"
+    ],
+    [
+     "CB3104",
+     "CB2205",
+     "explicit"
+    ],
+    [
+     "CB3105",
+     "CB2205",
+     "explicit"
+    ]
+   ],
+   "facts": 19,
+   "foundations": 0,
+   "gap_total": 0,
+   "gaps": {},
+   "model_failures": [],
+   "options": {
+    "IDE-I": [
+     "CS2207",
+     "MA2206"
+    ],
+    "IDE-II": [
+     "MA3107",
+     "CS3106"
+    ]
+   },
+   "prompt_tokens": 2097,
+   "provenance_share": 1.0,
+   "rank_source": "model",
+   "records": [
+    "CB2201",
+    "CB2202",
+    "CB2203",
+    "CB2204",
+    "CB2205",
+    "CB3101",
+    "CB3102",
+    "CB3103",
+    "CB3104",
+    "CB3105",
+    "CS2207",
+    "CS3106",
+    "MA2206",
+    "MA3107"
+   ],
+   "skills": 0,
+   "variant": "C",
+   "wall_seconds": 102.45
+  }
+ },
+ "temperature": 0
+}
